@@ -1,4 +1,4 @@
-package ch19.sec07;
+package ch19.exam07;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -19,6 +19,8 @@ public class ChatServer {
 	ExecutorService threadPool = Executors.newFixedThreadPool(100);
 	Map<String, SocketClient> chatRoom = Collections.synchronizedMap(new HashMap<>());
 
+	//추가 로드
+	//추가로 
 	//메소드: 서버 시작
 	public void start() throws IOException {
 		serverSocket = new ServerSocket(50001);	
